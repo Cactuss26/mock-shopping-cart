@@ -6,7 +6,7 @@ import { Cart } from "./Cart";
 
 export const router = createBrowserRouter([
     {
-        path: "/home",
+        path: "/",
         element: <App />,
         children: [
             { index: true, element: <Home />},

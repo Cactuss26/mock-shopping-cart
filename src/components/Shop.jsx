@@ -2,10 +2,10 @@ import { useOutletContext } from "react-router";
 import { Product } from "./Product";
 
 export const Shop = () => {
-    const { products, handlePlus, handleMinus } = useOutletContext();
+    const { products, handleAmt } = useOutletContext();
 
     const prodList = products.map(product => {
-        return <li><Product key={product.id} info={product} handlePlus={handlePlus} handleMinus={handleMinus}/></li>;
+        return <li key={product.id}><Product info={product} handleAmt={handleAmt}/></li>;
     });
 
     return (
